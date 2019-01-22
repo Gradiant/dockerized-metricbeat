@@ -1,0 +1,3 @@
+#!/bin/bash
+set -ex
+/usr/share/metricbeat/metricbeat setup -E setup.kibana.host="${KIBANA_URL:-http://kibana:5601}" -E output.elasticsearch.hosts=${ELASTICSEARCH_HOSTS:-[http://elasticsearch:9200]}
